@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://wave-warden.github.io/sitemap.xml

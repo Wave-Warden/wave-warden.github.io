@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wave Wardens: Free Tsunami Science Game for Students | WaveWardens.net</title>
+<meta name="google-site-verification" content="UTKq_LJzbnkirIIyeuFkot-oHMZgJn9pTadd9n9EXKY" />
+<meta name="description" content="Wave Wardens is a free browser game where students in grade 3 and up learn tsunami science and safety. No login, no ads, no data collected. Works on Chromebooks, iPads and phones. Aligned to NGSS 4-ESS3-2 and MS-ESS3-2.">
+<link rel="canonical" href="https://wave-warden.github.io/">
+<link rel="icon" type="image/svg+xml" href="logo.svg">
+<link rel="icon" type="image/png" sizes="48x48" href="icon-48.png">
+<link rel="icon" type="image/png" sizes="96x96" href="icon-96.png">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<meta name="theme-color" content="#2f95e0">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="WaveWardens.net">
+<meta property="og:title" content="Wave Wardens: Free Tsunami Science Game for Students">
+<meta property="og:description" content="Watch the wave forecast, build defenses, spot the warning signs and evacuate the island. Free, no login, classroom safe.">
+<meta property="og:url" content="https://wave-warden.github.io/">
+<meta property="og:image" content="https://wave-warden.github.io/img/forecast.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+[
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Wave Wardens",
+  "alternateName": ["WaveWardens.net", "WaveWardens"],
+  "url": "https://wave-warden.github.io/"
+},
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Wave Wardens",
+  "url": "https://wave-warden.github.io/",
+  "logo": "https://wave-warden.github.io/icon-512.png"
+},
+{
+  "@context": "https://schema.org",
+  "@type": ["VideoGame", "LearningResource"],
+  "name": "Wave Wardens",
+  "url": "https://wave-warden.github.io/",
+  "logo": "https://wave-warden.github.io/icon-512.png",
+  "description": "A free browser game about tsunami science and safety for grade 3 and up. Students watch a wave forecast, build coastal defenses, learn natural warning signs and evacuate an island while a real water simulation runs.",
+  "image": "https://wave-warden.github.io/img/forecast.jpg",
+  "genre": ["Educational", "Strategy", "Simulation"],
+  "gamePlatform": ["Web browser", "Chromebook", "iPad", "Android", "iPhone"],
+  "applicationCategory": "Game",
+  "isAccessibleForFree": true,
+  "inLanguage": "en",
+  "educationalLevel": ["Grade 3", "Grade 4", "Grade 5", "Grade 6", "Grade 7", "Grade 8"],
+  "learningResourceType": ["Educational game", "Simulation"],
+  "teaches": ["Tsunami formation", "Tsunami warning signs", "Wave shoaling", "Natural hazard mitigation", "Evacuation planning", "Engineering design"],
+  "educationalAlignment": [
+    {"@type": "AlignmentObject", "alignmentType": "teaches", "educationalFramework": "Next Generation Science Standards", "targetName": "4-ESS3-2"},
+    {"@type": "AlignmentObject", "alignmentType": "teaches", "educationalFramework": "Next Generation Science Standards", "targetName": "4-PS4-1"},
+    {"@type": "AlignmentObject", "alignmentType": "teaches", "educationalFramework": "Next Generation Science Standards", "targetName": "3-5-ETS1-1"},
+    {"@type": "AlignmentObject", "alignmentType": "teaches", "educationalFramework": "Next Generation Science Standards", "targetName": "MS-ESS3-2"},
+    {"@type": "AlignmentObject", "alignmentType": "teaches", "educationalFramework": "Next Generation Science Standards", "targetName": "MS-PS4-1"},
+    {"@type": "AlignmentObject", "alignmentType": "teaches", "educationalFramework": "Next Generation Science Standards", "targetName": "MS-ETS1-1"}
+  ],
+  "audience": {"@type": "EducationalAudience", "educationalRole": ["student", "teacher"]},
+  "typicalAgeRange": "8-",
+  "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}
+}
+]
+</script>
+<style>
+  :root { --ink: #0b3550; --orange: #ff8a3d; --teal: #1fb5c9; --sea: #3399d9; --cream: #fffaf0; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; color: var(--ink); background: var(--cream); line-height: 1.55; }
+  a { color: #1d6fa5; }
+  header { background: linear-gradient(180deg, #4aa3e0 0%, #3399d9 100%); color: #fff; padding: 1rem 1.2rem 3.2rem; text-align: center; }
+  .logo { display: block; margin: .6rem auto 0; width: 120px; height: 120px; filter: drop-shadow(0 6px 10px rgba(0,0,0,.25)); }
+  .brand { font-weight: 800; letter-spacing: .02em; font-size: 1.05rem; opacity: .95; }
+  h1 { font-size: clamp(2.2rem, 6vw, 3.6rem); margin: .8rem 0 .3rem; text-shadow: 0 3px 0 #0b3550; letter-spacing: .02em; }
+  .tagline { font-size: clamp(1.05rem, 2.6vw, 1.35rem); max-width: 720px; margin: 0 auto 1.4rem; }
+  .btn { display: inline-block; padding: .9rem 1.8rem; border-radius: 16px; font-weight: 800; font-size: 1.25rem; text-decoration: none; margin: .3rem; box-shadow: 0 6px 0 rgba(0,0,0,.25); }
+  .btn.play { background: var(--orange); color: #fff; font-size: 1.5rem; padding: 1rem 2.6rem; }
+  .btn.guide { background: #fff; color: var(--ink); }
+  .btn:active { transform: translateY(4px); box-shadow: 0 2px 0 rgba(0,0,0,.25); }
+  .hero-img { display: block; width: min(960px, 92vw); height: auto; aspect-ratio: 16 / 9; object-fit: cover; margin: -2.2rem auto 0; border-radius: 18px; box-shadow: 0 12px 30px rgba(0,0,0,.25); }
+  main { max-width: 980px; margin: 0 auto; padding: 1.5rem 1.2rem 3rem; }
+  .badges { display: flex; flex-wrap: wrap; gap: .6rem; justify-content: center; margin: 1.6rem 0 .6rem; padding: 0; list-style: none; }
+  .badges li { background: #e3f4fb; border: 2px solid #b9e2f3; border-radius: 999px; padding: .35rem .9rem; font-weight: 700; font-size: .95rem; }
+  h2 { color: var(--orange); margin-top: 2.4rem; }
+  .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 1rem; }
+  .step { background: #fff; border-radius: 16px; padding: 1rem; box-shadow: 0 3px 12px rgba(11,53,80,.08); }
+  .step img { width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 10px; display: block; margin-bottom: .6rem; }
+  .step h3 { margin: .2rem 0; color: var(--teal); }
+  table { border-collapse: collapse; width: 100%; background: #fff; border-radius: 12px; overflow: hidden; }
+  td, th { padding: .6rem .8rem; border-bottom: 1px solid #e1eef5; text-align: left; vertical-align: top; }
+  th { background: #eef7fc; }
+  .note { background: #eef7fc; border-radius: 14px; padding: 1rem 1.2rem; }
+  footer { text-align: center; color: #5b7a8f; font-size: .9rem; padding: 2rem 1rem 3rem; }
+</style>
+</head>
+<body>
+<header>
+  <img class="logo" src="icon-192.png" width="120" height="120" alt="Wave Wardens logo: a curling blue wave">
+  <div class="brand">WaveWardens.net</div>
+  <h1>WAVE WARDENS</h1>
+  <p class="tagline">A free tsunami science game for students in grade 3 and up. Forecast the wave, build defenses, spot the warning signs, and get every critter to high ground.</p>
+  <a class="btn play" href="play/">Play Now</a>
+  <a class="btn guide" href="teachers/">Teacher Guide</a>
+</header>
+<img class="hero-img" src="img/evacuate.jpg" width="1280" height="720" alt="Wave Wardens gameplay: the sea pulls back from the beach as cartoon critters run to green safe zones on the hills">
+
+<main>
+  <ul class="badges" aria-label="Classroom-friendly features">
+    <li>100% free</li>
+    <li>No login or accounts</li>
+    <li>No ads, no chat</li>
+    <li>No personal data collected</li>
+    <li>Chromebooks, iPads and phones</li>
+    <li>11 islands, 3 difficulty levels</li>
+    <li>Each round takes about 3-5 minutes</li>
+    <li>Grade 3+</li>
+    <li>NGSS 4-ESS3-2 &amp; MS-ESS3-2</li>
+  </ul>
+
+  <h2>How a round works</h2>
+  <div class="steps">
+    <div class="step">
+      <img src="img/forecast.jpg" width="1280" height="720" alt="Wave forecast showing the tsunami reaching the island with captions explaining each stage" loading="lazy">
+      <h3>1. Watch the forecast</h3>
+      <p>See the tsunami hit the island with no defenses. Captions explain the earthquake, the sea pulling back, and the wave growing in shallow water. The result is a red inundation map.</p>
+    </div>
+    <div class="step">
+      <img src="img/build.jpg" width="1280" height="720" alt="Build mode with a flood map, sand dunes, a sea wall and a warning siren placed on the island" loading="lazy">
+      <h3>2. Plan and build</h3>
+      <p>You have 3 minutes and a budget. Place dunes, sea walls, breakwaters, coral reefs, mangroves, sirens, escape paths, stilts and evacuation towers. Test your design, then improve it.</p>
+    </div>
+    <div class="step">
+      <img src="img/signs.jpg" width="1280" height="720" alt="Warning signs quiz with cards for strong shaking, the sea pulling back, and decoys like an ice-cream truck" loading="lazy">
+      <h3>3. Spot the warning signs</h3>
+      <p>The earthquake hits. Which signs mean "go to high ground now"? Answering fast gives you more time to evacuate.</p>
+    </div>
+    <div class="step">
+      <img src="img/evacuate.jpg" width="1280" height="720" alt="Critters gathered safely in the green safe zones while the tsunami approaches" loading="lazy">
+      <h3>4. Evacuate!</h3>
+      <p>The water is a real simulation. It flows around walls, washes away dunes and floods low ground. Tap homes to send everyone to safety.</p>
+    </div>
+  </div>
+
+  <h2>What students learn</h2>
+  <table>
+    <tr><th>Island</th><th>Science concept</th></tr>
+    <tr><td>1. Shell Bay</td><td>How undersea earthquakes cause tsunamis. The sea pulling back is a natural warning sign: go to high ground right away.</td></tr>
+    <tr><td>2. Mangrove Cove</td><td>Wave speed depends on water depth. Waves slow down and grow taller in shallow water. Reefs and mangroves absorb wave energy.</td></tr>
+    <tr><td>3. Flatfish Key</td><td>Tsunamis come as a series of waves, and the first is often not the biggest. Vertical evacuation on flat islands.</td></tr>
+    <tr><td>4. Otter River</td><td>Tsunamis travel up rivers, much farther inland than on the beach.</td></tr>
+    <tr><td>5. Shelter Isle</td><td>Waves bend around islands (refraction). Offshore islands shelter some of the coast.</td></tr>
+    <tr><td>6. Funnel Bay</td><td>Narrow, V-shaped bays squeeze the wave and make it taller.</td></tr>
+    <tr><td>7. Lagoon Atoll</td><td>Barrier reefs and sandbars break the wave early and absorb energy.</td></tr>
+    <tr><td>8. Cliffside Cove</td><td>Run-up: water climbs much higher on land than the wave height at sea.</td></tr>
+    <tr><td>9. Faraway Shores</td><td>Distant tsunamis cross whole oceans and arrive with no shaking. Official warnings matter.</td></tr>
+    <tr><td>10. Megaquake Coast</td><td>Bigger earthquakes make bigger tsunamis. Everything learned comes together.</td></tr>
+    <tr><td>Final: Coral City</td><td>A huge city with 16 homes and three waves. Layered defense: combining warnings, evacuation routes, engineered and natural defenses.</td></tr>
+    <tr><td>Wave Lab</td><td>Open sandbox for controlled experiments: change one defense at a time and compare the flooding.</td></tr>
+  </table>
+  <p><strong>Standards, grades 3-5:</strong> NGSS 4-ESS3-2 (solutions to reduce the impacts of natural Earth processes, including tsunamis), 4-PS4-1 (wave models), and 3-5-ETS1-1 to 1-3 (engineering design: define, test and improve).<br><strong>Middle school:</strong> MS-ESS3-2 (natural hazards and mitigation), MS-PS4-1 (wave models), and MS-ETS1-1 to 1-4 (engineering design). See the <a href="teachers/">Teacher Guide</a> for discussion questions and extension ideas.</p>
+
+  <h2>Made for classrooms</h2>
+  <div class="note">
+    <p>Wave Wardens runs in any modern browser with nothing to install. There are no accounts, ads, chat or in-app purchases, and no personal information is collected. Progress is saved only in the browser on that device. The game uses friendly cartoon animals and never shows people being harmed.</p>
+    <p>Best played in landscape on phones. On school networks, the first load downloads about 10 MB.</p>
+  </div>
+
+  <p style="text-align:center;margin-top:2rem"><a class="btn play" href="play/">Play Wave Wardens</a></p>
+</main>
+
+<footer>
+  WaveWardens.net &middot; A free educational game about tsunami science and safety &middot; <a href="teachers/">Teacher Guide</a>
+</footer>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7fd6ff"/>
+      <stop offset="1" stop-color="#2f95e0"/>
+    </linearGradient>
+    <linearGradient id="sea" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0" stop-color="#1e88e5"/>
+      <stop offset="1" stop-color="#0b3f7a"/>
+    </linearGradient>
+    <clipPath id="tile">
+      <rect width="512" height="512" rx="116"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#tile)">
+    <rect width="512" height="512" fill="url(#sky)"/>
+    <circle cx="392" cy="112" r="50" fill="#ffd166"/>
+    <!-- the big curling wave -->
+    <path fill="url(#sea)" d="M-20 430 C 30 340 95 230 195 168 C 285 112 405 128 440 218 C 462 285 418 342 356 334 C 308 328 290 276 324 252 C 352 233 386 252 380 282 C 376 300 356 306 344 296 C 360 330 400 352 440 352 C 480 352 505 340 530 330 L 530 540 L -20 540 Z"/>
+    <!-- foam along the crest -->
+    <path fill="none" stroke="#ffffff" stroke-width="26" stroke-linecap="round" stroke-linejoin="round"
+          d="M60 300 C 110 225 160 185 205 162 C 290 118 400 135 432 220 C 452 280 412 328 358 322 C 318 317 304 276 330 260"/>
+    <!-- foam spray -->
+    <circle cx="452" cy="168" r="13" fill="#ffffff"/>
+    <circle cx="478" cy="205" r="9" fill="#ffffff"/>
+    <circle cx="470" cy="140" r="7" fill="#ffffff"/>
+    <!-- front swell -->
+    <path fill="#0b3550" opacity="0.55" d="M-20 452 C 90 410 200 470 320 440 C 400 420 460 414 530 428 L 530 540 L -20 540 Z"/>
+  </g>
+</svg>
